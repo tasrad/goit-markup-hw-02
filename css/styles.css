@@ -44,7 +44,7 @@ a{
     color: var(--blue-color-text);
 }
 .link-navigation{
-    font-weight: 500;
+    font-weight: 600;
     font-size: var(--font-size-for-mini-text);
     padding-right: 4em;
 }
@@ -112,6 +112,8 @@ ul .our-advanteges{
 }
 .what-do-we-do{
     text-align: var(--text-center);
+    margin-bottom: 90px;
+    margin-top: 90px;
 }
 .what-do-we-do h2{
     text-align: var(--text-center);
@@ -119,9 +121,33 @@ ul .our-advanteges{
     font-size: 36px;
     word-spacing: 3%;
     margin-bottom: 50px;
-    margin-top: 90px;
 }
 .boxes{
     display: inline;
     margin: 0 15px;
+}
+.our-team{
+    background-color: #F5F4FA;
+    height: 650px;
+    text-align: center;
+}
+.our-team h2{
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.person{
+    display: inline-block;
+    margin: 15px;
+    background-color: #FFFFFF;
+    box-shadow: 1px 1px 3px var(--grey-text);
+    border-radius: 4px;
+    font-size: 16px;
+    word-spacing: 3%;
+}
+.person h3{
+    font-weight: 500;
+}
+.person p{
+color: var(--grey-text);
+padding-bottom: 15px;
 }
