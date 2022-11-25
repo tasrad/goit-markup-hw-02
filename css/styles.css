@@ -1,31 +1,113 @@
 :root{
     --blue-color-text: #2196F3;
+    --font-size-for-mini-text: 14px;
+    --text-center: center;
+    --grey-text: #757575;
 }
 
 body{
     font-family: 'Roboto', sans-serif;
-    color: rgba(33, 33, 33, 1);
+    color: #212121;
     background-color: rgba(255, 255, 255, 1);
 }
 header{
-    height: 80px;
     border: 1px solid rgba(236, 236, 236, 1);
-    columns: 6;
-    text-align: center;
-    vertical-align: middle;
+    text-align: var(--text-center);
+    padding: 20px;
 }
-.logo{
-    font-family: 'Raleway', sans-serif;
-    color: #000000;
-}
-.logo-blue,
-.current-page{
-    color: var(--blue-color-text);
-}
-li{
+header li{
     list-style-type: none;
+    display: inline;
+}
+nav{
+    padding-right: 4em;
+}
+nav,
+ul{
+    display: inline;
 }
 a{
     text-decoration: none;
     color: #000000;
 }
+.logo{
+    font-family: 'Raleway', sans-serif;
+    color: #000000;
+    font-weight: bold;
+    font-size: 26px;
+    letter-spacing: 3%;
+    display: inline;
+    margin: auto 20px;
+}
+.logo-blue,
+.current-page{
+    color: var(--blue-color-text);
+}
+.link-navigation{
+    font-weight: 500;
+    font-size: var(--font-size-for-mini-text);
+    padding-right: 4em;
+}
+.link-navigation:hover,
+.contact:hover{
+    color: var(--blue-color-text);
+}
+.contact{
+    color:var(--grey-text);
+    padding-right: 4em;
+    font-size: var(--font-size-for-mini-text);
+    font-weight: bold;
+}
+.solve-for-busniness{
+    background-color: #2F303A;
+    color: #FFFFFF;
+    padding: 200px;
+    
+}
+.solve-for-busniness h1{
+    font-size: 44px;
+    word-spacing: 6%;
+    line-height: 1.5;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.btn-order{
+    background-color: var(--blue-color-text);
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 6%;
+    text-align: var(--text-center);
+    padding: 10px 20px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+
+}
+.our-spesials{
+    text-align: center;
+}
+.our-spesials h2{
+    visibility: hidden;
+}
+.our-spesials h3{
+    text-transform: uppercase;
+}
+.our-spesials p{
+    font-size: var(--font-size-for-mini-text);
+    word-spacing: 3%;
+    color: var(--grey-text);
+}
+.advanteges{
+    text-align: start;
+}
+ul .our-advanteges{
+   display: inline-block;
+   margin: 0 10px;
+   width: 270px;
+   vertical-align: text-top;
+   line-height: 1.5;
+}
+
