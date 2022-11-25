@@ -4,11 +4,15 @@
     --text-center: center;
     --grey-text: #757575;
     --white-color: #FFFFFF;
+    --font-weight:600;
+    --black-color:#212121;
+    --inline-display:inline;
+    --inline-block-display: inline-block;
 }
 
 body{
     font-family: 'Roboto', sans-serif;
-    color: #212121;
+    color: var(--black-color);
     background-color: rgba(255, 255, 255, 1);
     margin: 0 auto;
 }
@@ -19,11 +23,11 @@ header{
 }
 header li{
     list-style-type: none;
-    display: inline;
+    display: var(--inline-display);
 }
 nav,
 ul{
-    display: inline;
+    display: var(--inline-display);
 }
 header a{
     text-decoration: none;
@@ -38,19 +42,23 @@ margin-left: 6em;
     font-weight: bold;
     font-size: 26px;
     letter-spacing: 3%;
-    display: inline;
+    display: var(--inline-display);
 }
 .logo-blue,
 .current-page{
     color: var(--blue-color-text);
 }
 .link-navigation{
-    font-weight: 600;
+    font-weight: var(--font-weight);
     font-size: var(--font-size-for-mini-text);
     padding-right: 6em;
 }
 .link-navigation:hover,
 .contact:hover{
+    color: var(--blue-color-text);
+}
+.link-navigation:focus,
+.contact:focus{
     color: var(--blue-color-text);
 }
 .contact{
@@ -79,7 +87,7 @@ margin-left: 6em;
     background-color: var(--blue-color-text);
     color: var(--white-color);
     font-size: 16px;
-    font-weight: 600;
+    font-weight: var(--font-weight);
     letter-spacing: 6%;
     text-align: var(--text-center);
     padding: 10px 20px;
@@ -107,7 +115,7 @@ margin-left: 6em;
     text-align: start;
 }
 ul .our-advanteges{
-   display: inline-block;
+   display: var(--inline-block-display);
    margin: 0 10px;
    width: 270px;
    vertical-align: text-top;
@@ -126,7 +134,7 @@ ul .our-advanteges{
     margin-bottom: 50px;
 }
 .boxes{
-    display: inline;
+    display: var(--inline-display);
     margin: 0 15px;
 }
 .our-team{
@@ -139,7 +147,7 @@ ul .our-advanteges{
     padding-top: 50px;
 }
 .person{
-    display: inline-block;
+    display: var(--inline-block-display);
     margin: 15px;
     color: var(--white-color);
     box-shadow: 1px 1px 3px var(--grey-text);
@@ -149,7 +157,7 @@ ul .our-advanteges{
 }
 .person h3{
     font-weight: 500;
-    color: #212121;
+    color: var(--black-color);
 }
 .person p{
 color: var(--grey-text);
@@ -190,12 +198,12 @@ footer a{
     list-style-type: none;
 }
 .btn-to-navigation li{
-    display: inline-block;
+    display: var(--inline-block-display);
     margin:auto 4px;
 }
 .btn-to-navigation button{
     font-size: 16px;
-    font-weight: 600;
+    font-weight: var(--font-weight);
     text-align: var(--text-center);
     padding: 8px 15px;
     display: block;
@@ -214,7 +222,7 @@ footer a{
 }
 .all-projects li{
     list-style-type: none;
-    display: inline-block;
+    display: var(--inline-block-display);
     margin: 15px;
     border: 1px solid #EEEEEE;
 }
