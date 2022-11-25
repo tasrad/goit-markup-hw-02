@@ -19,16 +19,16 @@ header li{
     list-style-type: none;
     display: inline;
 }
-nav{
-    padding-right: 4em;
-}
 nav,
 ul{
     display: inline;
 }
-a{
+header a{
     text-decoration: none;
     color: #000000;
+}
+.navigation{
+margin-left: 6em;
 }
 .logo{
     font-family: 'Raleway', sans-serif;
@@ -37,7 +37,6 @@ a{
     font-size: 26px;
     letter-spacing: 3%;
     display: inline;
-    margin: auto 20px;
 }
 .logo-blue,
 .current-page{
@@ -46,7 +45,7 @@ a{
 .link-navigation{
     font-weight: 600;
     font-size: var(--font-size-for-mini-text);
-    padding-right: 4em;
+    padding-right: 6em;
 }
 .link-navigation:hover,
 .contact:hover{
@@ -57,6 +56,7 @@ a{
     padding-right: 4em;
     font-size: var(--font-size-for-mini-text);
     font-weight: bold;
+    line-height: 2;
 }
 .solve-for-busniness{
     background-color: #2F303A;
@@ -150,4 +150,30 @@ ul .our-advanteges{
 .person p{
 color: var(--grey-text);
 padding-bottom: 15px;
+}
+footer{
+    background-color: #2F303A;
+    height: 250px;
+}
+footer a{
+    text-decoration: none;
+}
+.logo-white{
+    color: #FFFFFF;
+}
+.adress-studio{
+    color: #FFFFFF;
+    font-size: var(--font-size-for-mini-text);
+    word-spacing: 3%;
+    line-height: 2;
+}
+.logo-footer{
+    display: block;
+    padding: 60px 0 20px 180px;
+}
+.contact-footer{
+    display: block;
+    padding: 0;
+    margin: auto 180px;
+    list-style-type: none;
 }
