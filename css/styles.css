@@ -100,9 +100,6 @@ margin-left: 6em;
 .our-spesials{
     text-align: center;
 }
-.our-spesials h2{
-    visibility: hidden;
-}
 .our-spesials h3{
     text-transform: uppercase;
 }
@@ -227,3 +224,15 @@ footer a{
     margin: 15px;
     border: 1px solid #EEEEEE;
 }
+.visually-hidden {
+    position: absolute;
+      white-space: nowrap;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      border: 0;
+      padding: 0;
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%);
+      margin: -1px;
+  }
