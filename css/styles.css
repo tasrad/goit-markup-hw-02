@@ -3,7 +3,7 @@
     --text-center: center;
     --grey-text: #757575;
     --white-color: #FFFFFF;
-    --font-weight:600;
+    --font-weight:500;
     --black-color:#212121;
     --inline-display:inline;
     --inline-block-display: inline-block;
@@ -14,6 +14,9 @@
     --background-for-business: #2F303A;
     --background-for-team: #F5F4FA;
     --color-for-card-project:#EEEEEE;
+    --color-hover:rgba(24, 140, 232, 1);
+    --color-opacity-footer:rgba(255, 255, 255, 0.6);
+    --color-button-calm:#F5F4FA;
 }
 
 body{
@@ -47,7 +50,7 @@ margin-left: 6em;
 .logo{
     font-family: 'Raleway', sans-serif;
     color: var(--color-black-null);
-    font-weight: bold;
+    font-weight: 700;
     font-size: 26px;
     letter-spacing: 3%;
     display: var(--inline-display);
@@ -61,18 +64,21 @@ margin-left: 6em;
     padding-right: 6em;
 }
 .link-navigation:hover,
-.contact:hover{
+.contact:hover,
+.adress-studio:hover{
     color: var(--blue-color-text);
 }
 .link-navigation:focus,
-.contact:focus{
+.contact:focus,
+.adress-studio:focus{
     color: var(--blue-color-text);
 }
 .contact{
     color:var(--grey-text);
     padding-right: 4em;
-    font-weight: bold;
+    font-weight: 500;
     line-height: 2;
+    letter-spacing: 0.02em;
 }
 .solve-for-busniness{
     background-color: var(--background-for-business);
@@ -82,7 +88,7 @@ margin-left: 6em;
 }
 .solve-for-busniness h1{
     font-size: 44px;
-    word-spacing: 6%;
+    word-spacing: 0.06em;
     line-height: 1.5;
     text-align: center;
     text-transform: uppercase;
@@ -94,7 +100,8 @@ margin-left: 6em;
     color: var(--white-color);
     font-size: 16px;
     font-weight: var(--font-weight);
-    letter-spacing: 6%;
+    font-family: inherit;
+    letter-spacing: 0.06em;
     text-align: var(--text-center);
     padding: 10px 20px;
     display: block;
@@ -102,10 +109,12 @@ margin-left: 6em;
     border-radius: 4px;
     border: none;
     cursor: pointer;
+    box-shadow: 0 4px 4px var(--color-shadow);
 }
 .btn-order:hover,
 .btn-order:active{
-    box-shadow: 0 4px 4px var(--color-shadow);
+    background-color: var(--color-hover);
+    
 }
 .our-spesials{
     padding-top: 90px;
@@ -113,9 +122,16 @@ margin-left: 6em;
 }
 .our-spesials h3{
     text-transform: uppercase;
+    font-weight: 700;
+    color: var(--black-color);
+    line-height: 1.14;
 }
 .our-spesials p{
     color: var(--grey-text);
+    line-height: 1.71;
+    vertical-align: top;
+    font-style: Regular;
+    text-align: left;
 }
 .advanteges{
     text-align: start;
@@ -137,6 +153,8 @@ ul .our-advanteges{
     font-weight: bold;
     font-size: 36px;
     margin-bottom: 50px;
+    line-height: 1.17;
+    color: var(--black-color);
 }
 .boxes{
     display: var(--inline-display);
@@ -148,8 +166,12 @@ ul .our-advanteges{
     text-align: center;
 }
 .our-team h2{
-    padding-bottom: 50px;
     padding-top: 50px;
+    text-align: var(--text-center);
+    font-weight:700;
+    font-size: 36px;
+    line-height: 1.17;
+    color: var(--black-color);
 }
 .person{
     display: var(--inline-block-display);
@@ -177,6 +199,9 @@ footer a{
 .logo-white{
     color: var(--white-color);
 }
+.address{
+    font-style: normal;
+}
 .adress-studio{
     color: var(--white-color);
     line-height: 2;
@@ -190,6 +215,8 @@ footer a{
     padding: 0;
     margin: auto 180px;
     list-style-type: none;
+    font-weight: 400;
+    color:var(--color-opacity-footer) ;
 }
 .filter{
     display: block;
@@ -205,10 +232,14 @@ footer a{
     margin:auto 4px;
 }
 .btn-to-navigation button{
+    background-color: var(--color-button-calm);
+    color: var(--black-color);
     font-size: 16px;
     font-weight: var(--font-weight);
+    font-family: inherit;
     text-align: var(--text-center);
     padding: 8px 15px;
+    letter-spacing: 0.03em;
     display: block;
     margin: 0 auto;
     border: none;
@@ -217,6 +248,10 @@ footer a{
    cursor: pointer;
 }
 .btn-to-navigation button:hover{
+    background-color: var(--blue-color-text);
+    color: var(--white-color);
+}
+.btn-to-navigation button:active{
     background-color: var(--blue-color-text);
     color: var(--white-color);
 }
@@ -234,7 +269,20 @@ footer a{
 }
 .all-projects h2{
     font-size: 18px;
-    font-weight: 700;   
+    font-weight: 700;  
+    line-height: 2; 
+    letter-spacing: 0.06;
+    color: var(--black-color);
+    text-align: left;
+    padding-left: 24px;
+}
+.all-projects p{
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 1.86;
+    text-align: left;
+    color: var(--grey-text);
+    padding-left: 24px;
 }
 .visually-hidden {
     position: absolute;
